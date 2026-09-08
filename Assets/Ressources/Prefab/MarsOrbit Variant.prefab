@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &857890545215436015
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 46012895521638748, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: speed
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1154876671309079555, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993073442113467504, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 5fbc1d08a489d6845baa4cb9bb177126, type: 2}
+    - target: {fileID: 2146011035759850860, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146011035759850860, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146011035759850860, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146011035759850860, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146011035759850860, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2146011035759850860, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4995786913143921597, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_Name
+      value: Mars
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5773650190758935888, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6386019162109397461, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+      propertyPath: m_Name
+      value: MarsOrbit Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 897714325764955863, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e97ee0f7fdc88b48b08f044a4be1053, type: 3}
