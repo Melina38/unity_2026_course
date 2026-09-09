@@ -8,7 +8,7 @@ public class GameController : MonoBehaviour
 
     [Range(0, 100)]
     [Tooltip("Global speed of the game")]
-    public float Speed;
+    public float Speed {get; set;}
     private float? _previousSpeed;
 
     public Orbit GenericOrbit;

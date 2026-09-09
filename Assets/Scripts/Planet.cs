@@ -16,34 +16,40 @@ public class Planet : MonoBehaviour
 
     public List<Orbit> _existingOrbits = new List<Orbit>();
 
-    public void UpdateFromOrbitPreset(OrbitPreset preset)
+    public void UpdateFromPreset(OrbitDataProvider preset)
     {
-        this.distanceFromOrbit = preset.OrbitRadius;
-        this.bodySize = preset.PlanetSize;
-        this.myAutoRotate.speed = preset.PlanetRotationSpeed;
+        var data = preset.GetData();
+        this.distanceFromOrbit = data.OrbitRadius;
+        this.bodySize = data.PlanetSize;
 
-        for(int i = 0; i < preset.satellites.Count; i++)
+        if(this.myAutoRotate != null)
+            this.myAutoRotate.speed = data.PlanetRotationSpeed;
+        
+
+        for(int i = 0; i < data.Satellites.Count; i++)
         {
-            var satellitePreset = preset.satellites[i];
+            var satellitepresetToCreate = data.Satellites[i];
             if(this._existingOrbits.Count > i)
             {
-                this._existingOrbits[i].preset = satellitePreset;
+                this._existingOrbits[i].preset = satellitepresetToCreate;
             }
-            else if (satellitePreset != null)
+            else if (satellitepresetToCreate != null)
             {
                 var newOrbit = GameObject.Instantiate(GameController.Instance.GenericOrbit, this.transform);
-                newOrbit.preset = satellitePreset;
+                newOrbit.preset = satellitepresetToCreate;
                 this._existingOrbits.Add(newOrbit);
             }
             
         }
 
-        for(int j = preset.satellites.Count; j < this._existingOrbits.Count; j++)
+        for(int j = data.Satellites.Count; j < this._existingOrbits.Count; j++)
         {
-            var existingOrbit = this._existingOrbits[j];
-            this._existingOrbits.RemoveAt(j);
+            var _existingOrbit = _existingOrbits[j];
+            _existingOrbits.RemoveAt(j);
             j--;
-            GameObject.Destroy(existingOrbit.gameObject);
+            if (_existingOrbit != null)
+                GameObject.Destroy(_existingOrbit.gameObject);
+            
         }
     }
 

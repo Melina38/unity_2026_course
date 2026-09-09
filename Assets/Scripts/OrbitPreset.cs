@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "New Orbit", menuName = "ScriptableObjects/OrbitPreset")]
 
-public class OrbitPreset : ScriptableObject
+public class OrbitPreset : OrbitDataProvider
 {
     [Header("Orbit")]
     //Orbit variables
@@ -29,7 +29,22 @@ public class OrbitPreset : ScriptableObject
     [Range(0, 1000)]
     public float PlanetSize;
 
-    public List<OrbitPreset> satellites;
+    public List<OrbitDataProvider> satellites;
+
+    public override OrbitData GetData()
+    {
+        return new OrbitData()
+        {
+
+            OrbitalSpeed = this.OrbitalSpeed,
+            OrbitRadius = this.OrbitRadius,
+            PlanetRotationSpeed = this.PlanetRotationSpeed,
+            PlanetSize = this.PlanetSize,
+            PlanetPrefab = this.PlanetPrefab,
+            Satellites = this.satellites 
+        };
+        
+    }
 
 
 }

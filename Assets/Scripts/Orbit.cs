@@ -2,13 +2,22 @@ using UnityEngine;
 
 public class Orbit : MonoBehaviour
 {
-    public OrbitPreset preset;
+    public OrbitDataProvider preset;
     public AutoRotate myAutoRotate;
     public Planet myPlanet;
 
     public void Start()
     {
-        this.myPlanet = GameObject.Instantiate(this.preset.PlanetPrefab, this.transform);
+        this.Generate();
+    }
+    public void Generate()
+    {
+        OrbitData data = this.preset.GetData();
+        if (this.myPlanet != null)
+            this.myPlanet = GameObject.Instantiate(data.PlanetPrefab, this.transform);
+
+        if (this.preset != null)
+            this.UpdateWithPreset();
     }
     public void Update()
     {
@@ -17,8 +26,10 @@ public class Orbit : MonoBehaviour
 
     public void UpdateWithPreset()
     {
+        OrbitData data = this.preset.GetData();
         //set values from preset to autoroatate
-        myAutoRotate.speed = this.preset.OrbitalSpeed;
-        myPlanet.UpdateFromOrbitPreset(this.preset);
+        myAutoRotate.speed = data.OrbitalSpeed;
+        myPlanet.UpdateFromPreset(this.preset);
+
     }
 }
