@@ -12,6 +12,9 @@ public class AutoRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        float dt = Time.deltaTime;
+        //d = t*v
+        float angle = dt * speed * GameController.Instance.Speed;
         this.transform.Rotate(Vector3.up, speed * GameController.Instance.Speed);
     }
 }

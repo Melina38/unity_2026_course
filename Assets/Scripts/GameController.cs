@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     public float Speed;
     private float? _previousSpeed;
 
+    public Orbit GenericOrbit;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
