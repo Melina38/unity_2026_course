@@ -17,3 +17,4 @@ MonoBehaviour:
   PlanetPrefab: {fileID: 7995392171417707657, guid: bb29b7a48ea1aa6418b2d6d494d22c91, type: 3}
   PlanetRotationSpeed: 1
   PlanetSize: 243
+  satellites: []

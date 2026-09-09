@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dff4fdc270a94e46a08e628e3ff5f49, type: 3}
   m_Name: MoonPreset
   m_EditorClassIdentifier: Assembly-CSharp::OrbitPreset
-  OrbitalSpeed: 2
-  OrbitRadius: 856
-  PlanetPrefab: {fileID: 3720703383294667138, guid: 3ade3026949b92c4bb3f0a55e41f8738, type: 3}
+  OrbitalSpeed: 10
+  OrbitRadius: 400
+  PlanetPrefab: {fileID: 8039967198710072972, guid: 7bd8918ecc8602748a4cf770ca3275d2, type: 3}
   PlanetRotationSpeed: 2
-  PlanetSize: 161
+  PlanetSize: 50
   satellites:
   - {fileID: 0}

@@ -42,6 +42,7 @@ public class Planet : MonoBehaviour
         {
             var existingOrbit = this._existingOrbits[j];
             this._existingOrbits.RemoveAt(j);
+            j--;
             GameObject.Destroy(existingOrbit.gameObject);
         }
     }
