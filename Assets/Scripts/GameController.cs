@@ -5,17 +5,31 @@ public class GameController : MonoBehaviour
 
     public static GameController Instance;
 
+    public event System.Action<float> OnSpeedChange;
 
     [Range(0, 100)]
     [Tooltip("Global speed of the game")]
-    public float Speed {get; set;}
+
+    
+
+    private float _speed;
+    public float Speed {
+        get { return this._speed;}
+        set{
+            this._speed = value;
+            if(this.OnSpeedChange != null)
+            this.OnSpeedChange.Invoke(this._speed);
+        }
+    }
     private float? _previousSpeed;
 
     public Orbit GenericOrbit;
 
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         if (Instance == null)
         Instance = this;
